@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>한라산</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	
+	<style>
+		.pic1 {width:100%;}
+		table {width:100%;}
+      	table, th, td {border: 1px solid #bcbcbc;}
+	</style>
+
+	<script>
+		function simpleLightbox(imageUrl, bgColor, maxWidth){
+		    if(typeof bgColor === 'undefined'){
+		        bgColor = '#000';
+		    }
+		    if(typeof maxWidth === 'undefined'){
+		        maxWidth = '1100px';
+		    }
+		    window.open('', 'simpleLightbox').document.write('<html><head><meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, width=device-width" /></head><body style="margin:0;'+bgColor+';height:100%;" onclick="javascript:window.close(\'simpleLightbox\');"><table border="0" width="100%" height="100%"><tr><td valign="middle" align="center"><img style="position:relative;z-index:2;width:100%;max-width:'+maxWidth+';" src="'+imageUrl+'"/></td></tr></table></body></html>');
+		}
+	</script>
+
+</head>
+<body>
+
+	<div class="container">
+		<header><h3>한라산(漢拏山, 1947m)</h3></header>
+		<div class="row">
+			<div class="map_path col-md-6"> 
+				<img src="../images/images_mt/MtHalla_With_Path.jpg" class="pic1" onclick="javascript:simpleLightbox($(this).attr('src'))"	>
+			
+<!-- 					<script>
+						$('img').on('click', function(){ simpleLightbox($(this).attr('src'));});
+					</script>
+ -->				
+			</div>
+			<div class="path_detail col-md-6"> 
+				<table>
+					<thead>
+					<tr>
+						<th>2018년 10월 08일</th>
+						<td>브릭 캠퍼스, 아침미소목장</td>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<th>10월 09일</th>
+						<td>다가미김밥, 성판악, 속밭대피소, 진달래밭대피소, 백록담, 성판악<br>
+							<img src="../images/images_deco/orange.gif" width=30 height=5>
+						     21.9km,  10시간 57분
+						</td>
+					</tr>
+					<tr>
+						<th>10월 10일</th>
+						<td>메종글래드 정원, 노루생태관찰원, 부가네농장 황금향
+						</td>
+					</tr>
+					</tbody>
+			    </table>				
+			</div>
+
+			<div class="subject_detail col-md-6">
+ 				<br> 
+				<h6><strong>국립공원, 천연기념물 182호,<br>
+				       유네스코 세계유산(제주 화산섬과 용암동굴)</strong>
+				</h6>
+				한라산(漢한나라한拏붙잡을나山메산)은 은하수를 붙잡을 수 있을 정도로 높은 산이라는 뜻이며, 남한에서 가장 높은 산이다. 氵(물 수)와 菫(진흙근)이 합쳐진 글자인 漢은 ‘은하수’의 뜻이 있다. 마치 기다란 솜사탕처럼 보이는 은하수의 모습을 곱고 고운 진흙물에 비유한 듯 하다. 
+				<br>
+				<h6><strong><br>백록담</strong>
+				</h6>
+				백록담은 한라산 꼭대기에 있는 화구호(화산의 분화구에 생긴 호수)이다. 둘레는 약 3km, 동서 길이는 약 500m이다. 白흰백鹿사슴록潭못담이라는 이름은 흰 사슴이 이곳 물을 마셨고, 신선들이 하늘에서 내려와 이 백록을 타고 놀았다는 전설에서 유래되었다.
+			</div>
+
+			<div class="image2 col-md-6"> 
+				<img src="../images/images_mt/MtHalla_WhiteDeerLake.jpg" class="pic1" onclick="javascript:simpleLightbox($(this).attr('src'))"	>
+			</div>
+		</div>
+	</div>
+	
+	<div style="text-align:right; margin: 0px 20px 10px 20px;">
+	최초 작성: 2018년 11월 09일<br>
+	최종 수정: 2018년 11월 09일
+	</div>
+</body>
+</html>
