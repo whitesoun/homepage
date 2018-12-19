@@ -15,11 +15,29 @@
       	th{ height:82px; }
       	td{ text-align:center; font-size: small; }
 	</style>
+
+	<script>
+		function simpleLightbox(imageUrl, bgColor, maxWidth){
+		    if(typeof bgColor === 'undefined'){
+		        bgColor = '#000';
+		    }
+		    if(typeof maxWidth === 'undefined'){
+		        maxWidth = '1100px';
+		    }
+		    window.open('', 'simpleLightbox').document.write('<html><head><meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, width=device-width" /></head><body style="margin:0;'+bgColor+';height:100%;" onclick="javascript:window.close(\'simpleLightbox\');"><table border="0" width="100%" height="100%"><tr><td valign="middle" align="center"><img style="position:relative;z-index:2;width:100%;max-width:'+maxWidth+';" src="'+imageUrl+'"/></td></tr></table></body></html>');
+		}
+		
+		function button1_click() {
+			alert("버튼1을 누르셨습니다.");
+		}
+	</script>
+
+
 </head>
 <body>
 
 	<div class="container">
-		<header><h5>서양 미술사</h5></header>
+		<header><h5>서양 건축/미술사</h5></header>
 		<div class="row">
 <!-- ============ 1.1 선사시대 ============================== -->
 			<div class="item_header col-md-4" align="left" >
@@ -90,13 +108,13 @@
 					<tr>
 						<th><img src="images/images_deco/white.gif" class="pic1" ></th>
 						<th><img src="images/images_art/IMG_3649.JPG" class="pic1"> </th>
-						<th><img src="images/images_deco/white.gif" class="pic1"></th>
+						<th><img src="images/images_art/IMG_6950 (2).JPG" class="pic1"></th>
 						<th><img src="images/images_art/IMG_3646.JPG" class="pic1"></th>
 					</tr>
 					<tr>
 						<td>파르테논신전</td>
 						<td>벨베데레의<br>토로소</td>
-						<td>멜로스의<br>비너스</td>
+						<td>밀로의<br>비너스</td>
 						<td>라오콘</td>
 					</tr>
 					</tbody>
@@ -115,16 +133,16 @@
 					</thead>
 					<tbody>
 					<tr>
-						<th><img src="images/images_deco/white.gif"          class="pic1" ></th>
+						<th><img src="images/images_art/IMG_3742.JPG"          class="pic1" ></th>
+						<th><img src="images/images_art/IMG_3753.JPG"          class="pic1"></th>
 						<th><img src="images/images_art/20170114_162215.jpg" class="pic1"> </th>
 						<th><img src="images/images_art/IMG_3731.JPG"        class="pic1"></th>
-						<th><img src="images/images_deco/white.gif"          class="pic1"></th>
 					</tr>
 					<tr>
 						<td>판테온</td>
+						<td>판테온 내부</td>
 						<td>콜로세움</td>
 						<td>수도교</td>
-						<td>아치/돔/<br>콘크리트</td>
 					</tr>
 					</tbody>
 			    </table>				
@@ -223,7 +241,7 @@
 					</thead>
 					<tbody>
 					<tr>
-						<th><img src="images/images_deco/white.gif"   class="pic1" ></th>
+						<th><img src="images/images_art/IMG_6944.JPG"   class="pic1" ></th>
 						<th><img src="images/images_deco/white.gif"   class="pic1"> </th>
 						<th><img src="images/images_art/IMG_3625.JPG" class="pic1"></th>
 						<th><img src="images/images_deco/white.gif"   class="pic1"></th>
@@ -252,7 +270,7 @@
 					<tr>
 						<th><img src="images/images_deco/white.gif" class="pic1" ></th>
 						<th><img src="images/images_art/IMG_6057.JPG" class="pic1" ></th>
-						<th><img src="images/images_deco/white.gif" class="pic1"></th>
+						<th><img src="images/images_art/IMG_6968.JPG" class="pic1"></th>
 						<th><img src="images/images_art/20170112_122754.jpg" class="pic1" ></th>
 					</tr>
 					<tr>
@@ -308,7 +326,7 @@
 					</tr>
 					<tr>
 						<td>성 바울의 개종<br>                            <font color="gray">카바라조</font></td>
-						<td><font size="1em">산 피에트로 대성당</font><br><font color="gray">베르니니</font></td>
+						<td><font size="1em">산 피에트로 대성당</font><br><font color="gray">베르니니 외</font></td>
 						<td>삼미신<br>                                   <font color="gray">루벤스</font></td>
 						<td><font size="1em">사냥중인 찰스 1세</font><br> <font color="gray">판 다이크</font></td>
 					</tr>
@@ -316,7 +334,7 @@
 						<th><img src="images/images_deco/white.gif" class="pic1" ></th>
 						<th><img src="images/images_art/IMG_4655.JPG" class="pic1"> </th>
 						<th><img src="images/images_deco/white.gif" class="pic1"></th>
-						<th><img src="images/images_deco/white.gif" class="pic1"></th>
+						<th><img src="images/images_art/IMG_7268.JPG" class="pic1"></th>
 					</tr>
 					<tr>
 						<td>야간순찰대<br>                             <font color="gray">렘브란트</font></td>
@@ -369,15 +387,15 @@
 					<tbody>
 					<tr>
 						<th><img src="images/images_deco/white.gif" class="pic1" ></th>
-						<th><img src="images/images_deco/white.gif" class="pic1"> </th>
+						<th><img src="images/images_art/IMG_6973 (2).JPG" class="pic1"> </th>
 						<th><img src="images/images_deco/white.gif" class="pic1"></th>
-						<th><img src="images/images_deco/white.gif" class="pic1"></th>
+						<th><img src="images/images_art/IMG_7061.JPG" class="pic1"></th>
 					</tr>
 					<tr>
 						<td><font size="1em">사비니 여인의 중재</font><br>      <font color="gray">다비드</font></td>
 						<td><font size="1em">나폴레옹 황제의 <br>대관식 / </font><font color="gray">다비드</font></td>
 						<td><font size="1em">드 브로그리 왕자비<br>의 초상 / </font><font color="gray">앵그르</font></td>
-						<td>터키탕<br>                                         <font color="gray">앵그르</font></td>
+						<td>비너스의 탄생<br>                                     <font color="gray">카바넬</font></td>
 					</tr>
 					</tbody>
 			    </table>				
@@ -449,13 +467,13 @@
 					</thead>
 					<tbody>
 					<tr>
-						<th><img src="images/images_deco/white.gif" class="pic1" ></th>
+						<th><img src="images/images_art/IMG_7059.JPG" class="pic1" ></th>
 						<th><img src="images/images_deco/white.gif" class="pic1"> </th>
 						<th><img src="images/images_deco/white.gif" class="pic1"></th>
 						<th><img src="images/images_deco/white.gif" class="pic1"></th>
 					</tr>
 					<tr>
-						<td>씨 뿌리는 사람<br>   <font color="gray">밀레</font></td>
+						<td>이삭 줍기<br>       <font color="gray">밀레</font></td>
 						<td>내 화실의 내부<br>   <font color="gray">쿠르베</font></td>
 						<td>     <br>          <font color="gray">   </font></td>
 						<td>           <br>    <font color="gray">  </font></td>
@@ -476,7 +494,7 @@
 					</thead>
 					<tbody>
 					<tr>
-						<th><img src="images/images_deco/white.gif" class="pic1" ></th>
+						<th><img src="images/images_art/IMG_7313 (2).JPG" class="pic1" ></th>
 						<th><img src="images/images_deco/white.gif" class="pic1"> </th>
 						<th><img src="images/images_deco/white.gif" class="pic1"></th>
 						<th><img src="images/images_deco/white.gif" class="pic1"></th>
@@ -557,33 +575,45 @@
 					</thead>
 					<tbody>
 					<tr>
-						<th><img src="images/images_deco/white.gif" class="pic1" ></th>
-						<th><img src="images/images_art/IMG_6065.JPG" class="pic1"> </th>
+						<th><img src="images/images_art/IMG_7044.JPG"   class="pic1"></th>
+						<th><img src="images/images_art/IMG_6065.JPG" class="pic1"></th>
 						<th><img src="images/images_art/IMG_2964.jpg" class="pic1"></th>
 						<th><img src="images/images_art/IMG_6060.JPG" class="pic1"></th>
 					</tr>
 					<tr>
-						<td>수련           <br>   <font color="gray"> 모네 </font></td>
+						<td>양산을 든 여인         <br>   <font color="gray"> 모네 </font></td>
 						<td>워터루 다리<br>   <font color="gray"> 모네 </font></td>
 						<td><font size="1em"> 꽃다발을 든 무용수 </font><br> <font color="gray"> 드가 </font></td>
 						<td>                  무희 <br>                    <font color="gray"> 드가 </font></td>
 					</tr>
 					<tr>
-						<th><img src="images/images_deco/white.gif" class="pic1" ></th>
-						<th><img src="images/images_deco/white.gif" class="pic1"> </th>
-						<th><img src="images/images_art/IMG_6064.JPG" class="pic1"></th>
-						<th><img src="images/images_deco/white.gif" class="pic1"> </th>
+						<th><img src="images/images_art/IMG_7040.JPG"     class="pic1"></th>
+						<th><img src="images/images_art/IMG_7058 (2).JPG" class="pic1"></th>
+						<th><img src="images/images_art/IMG_6064.JPG"     class="pic1"></th>
+						<th><img src="images/images_art/IMG_7042 (2).JPG"       class="pic1"></th>
 					</tr>
 					<tr>
-						<td>  <br>   <font color="gray"> 마네</font></td>
-						<td>  <br>   <font color="gray"> </font></td>
-						<td> 오달리스크 <br>   <font color="gray"> 느루아르 </font></td>
-						<td>  <br> <font color="gray">  </font></td>
+						<td><font size="1em">풀밭 위의 점심<br>식사 / <font color="gray"> 마네</font></font></td>
+						<td> 올랭피아 <br>   <font color="gray"> 마네 </font></td>
+						<td> 오달리스크 <br>   <font color="gray"> 르느와르 </font></td>
+						<td> <font size="1em">물랭 드 갈레트의<br>무도회 / <font color="gray"> 르느와르</font></font></td>
+					</tr>
+					<tr>
+						<th><img src="images/images_art/IMG_7043 (2).JPG"     class="pic1"></th>
+						<th><img src="images/images_art/" class="pic1"></th>
+						<th><img src="images/images_art/"     class="pic1"></th>
+						<th><img src="images/images_art/"       class="pic1"></th>
+					</tr>
+					<tr>
+						<td> 도시의 댄스 <br>   <font color="gray"> 르느와르 </font></td>
+						<td>  <br>   <font color="gray">  </font></td>
+						<td>  <br>   <font color="gray">  </font></td>
+						<td>         <font color="gray"> </font></td>
 					</tr>
 					</tbody>
 			    </table>				
 			</div>
-<!-- ============ 4.9 로댕 ============================== -->
+<!-- ============ 4.9 로댕, 브루델(?)============================== -->
 			<div class="item_header col-md-4" align="left" >
 				<a href="mt_cheongkye.html" target="_blank">
 					<br><font color="green"><strong>
@@ -597,14 +627,14 @@
 					<tbody>
 					<tr>
 						<th><img src="images/images_art/IMG_3658.JPG" class="pic1" ></th>
-						<th><img src="images/images_deco/white.gif" class="pic1"> </th>
-						<th><img src="images/images_deco/white.gif" class="pic1"></th>
+						<th><img src="images/images_art/IMG_7049.JPG" class="pic1"> </th>
+						<th><img src="images/images_art/IMG_7052.JPG" class="pic1"></th>
 						<th><img src="images/images_deco/white.gif" class="pic1"></th>
 					</tr>
 					<tr>
-						<td> 생각하는 사람 <font color="gray">바티칸</font></td>
-						<td> ??? <br>   <font color="gray">로댕   </font></td>
-						<td>  <br>   <font color="gray">  </font></td>
+						<td> 생각하는 사람 <br>로댕/ <font color="gray"바티칸</font></td>
+						<td> 지옥의 문 <br>          <font color="gray">로댕/오르세   </font></td>
+						<td><font size="1em"> 활 쏘는 헤라클레스 <br></font><font color="gray"> 부르델/오르세 </font></td>
 						<td>  <br>   <font color="gray">  </font></td>
 					</tr>
 					</tbody>
@@ -633,6 +663,18 @@
 						<td> ??? <br>   <font color="gray">고갱  </font></td>
 						<td> 자화상 <br>   <font color="gray"> 반 고흐 </font></td>
 						<td> 아이리스 <br> <font color="gray"> 반 고흐 </font></td>
+					</tr>
+					<tr>
+						<th><img src="images/images_art/IMG_7057.JPG" class="pic1" ></th>
+						<th><img src="images/images_art/IMG_7055.JPG" class="pic1"> </th>
+						<th><img src="images/images_art/IMG_4614.JPG" class="pic1"></th>
+						<th><img src="images/images_art/IMG_7054.JPG" class="pic1"></th>
+					</tr>
+					<tr>
+						<td><font size="1em"> 아를의 별이 빛나는<br>밤 /      <font color="gray">반 고흐</font></font></td>
+						<td>                  자화상 <br>                   <font color="gray">반 고흐 </font></td>
+						<td>                  고흐의 의자 <br>               <font color="gray">반 고흐</font></td>
+						<td><font size="1em"> 오베르-쉬르-우아즈의<br> 교회 /<font color="gray">반 고흐 </font></font></td>
 					</tr>
 					</tbody>
 			    </table>				
@@ -839,8 +881,8 @@
 					</thead>
 					<tbody>
 					<tr>
-						<th><img src="images/images_deco/white.gif" class="pic1"> </th>
-						<th><img src="images/images_deco/white.gif" class="pic1"> </th>
+						<th><img src="images/images_deco/white.gif" class="pic1" onclick="simpleLightbox('');"> </th>
+						<th><img src="images/images_deco/white.gif" class="pic1" onclick="simpleLightbox('');"> </th>
 						<th><img src="images/images_deco/white.gif" class="pic1"></th>
 						<th><img src="images/images_deco/white.gif" class="pic1"></th>
 					</tr>
