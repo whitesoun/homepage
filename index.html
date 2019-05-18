@@ -12,6 +12,27 @@
 		table {width:100%;}
       	table, th, td {border: 1px solid #bcbcbc; padding: 3px 0px 3px 5px; }
       	div {margin: 3px 0px 3px 0px }
+      	.div_background {
+      		display: block;
+      		margin-left:  auto;
+      		margin-right: auto;
+      		width:     100%;
+      		max-width: 500px;
+      		background-color: ivory;
+      	}
+      	.img_background {
+      		display:      block;
+      		margin-left:  auto;
+      		margin-right: auto;
+      		width:        100%;
+      	}
+      	div#mat11 { float: left; height: 100px; width: 40%; background-color: red;}
+      	   #mat12 { float: left; height: 100px; width: 20%; background-color: orange;}
+      	   #mat13 { float: left; height: 100px; width: 40%; background-color: red;}
+
+      	   #mat21 { float: left; height: 300px; width: 25%; background-color: yellow;}
+      	   #mat22 { float: left; height: 300px; width: 50%; background-color: green;}
+      	   #mat23 { float: left; height: 300px; width: 25%; background-color: purple;}
 	</style>
 </head>
 <body>
@@ -20,13 +41,42 @@
 <img vspace=10>  이미지에서 여백주기
 《성프란체스코전》
 <font size="1em" color="gray">
+이미지 중앙정렬방법: style의 img_background 참조
  -->
 
 
+<header><h5>지덕체를 고루 갖춘, <br>멋지고, 아름답고, 예쁜 소운이</h5></header>
 
+<div class="div_background">
+<!-- ===== 1 행, height는 비율(%)가 안된다. ======= -->
+<div>
+	<div id="mat11" ></div>
+	<div id="mat12" >
+		<a href="index10_rhythmic_gymnastics.html" target="_blank">
+			<img src="images/images_index_page/icon_rythmic_gym.png"
+				 width=100% 
+			></img>
+		</a> 
+	</div>
+	<div id="mat13" ></div>
+</div>
+
+<!-- ===== 2 행, height는 비율(%)가 안된다. ======= -->
+<div>
+	<div id="mat21" ></div>
+	<div id="mat22" >
+		<img class="img_background" 
+			 src  ="images/images_index_page/soun_animation1.gif"
+			 >
+		</img>
+	</div>
+	<div id="mat23" ></div>
+</div>
+
+<!-- ===== 3 행, height는 비율(%)가 안된다. ======= -->
+<div>
 	<div class="container">
-		<header><h5>지덕체를 고루 갖춘, <br>멋지고, 아름답고, 예쁜 소운이</h5></header>
-		<div class="row">
+		<div >
 <!-- ============ 10.리듬체조 ======= &emsp; ======================= -->
 			<div class="item_header col-md-4" align="left">
 				<a href="index10_rhythmic_gymnastics.html" target="_blank">
@@ -136,6 +186,10 @@
 		</div>
 <!-- ========================================== -->
 	</div>	
+</div>
+</div>
+
+
 	<div style="text-align:right; margin: 10px 20px 10px 20px;">
 	최초 작성: 2018년 11월 09일<br>
 	최종 수정: 2018년 11월 13일
