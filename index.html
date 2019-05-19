@@ -4,14 +4,34 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>지덕체를 고루 갖춘 소운이</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
 	
 	<style>
-		.pic1 {width:100%;}
 		.item_header {line-height:1.7em; width: 100%; padding-top: 10px;}
 		table {width:100%;}
       	table, th, td {border: 1px solid #bcbcbc; padding: 3px 0px 3px 5px; }
-      	div {margin: 3px 0px 3px 0px }
+
+		.img_row1_top	 {	width:        80%; height:       80%; 
+					 		margin-left: 10%; margin-right:  10%; 
+					 		margin-top:   5%; margin-bottom: 15%;  
+		}
+		.img_row1_bottom {	width:        80%; height:       80%; 
+					 		margin-left: 10%; margin-right:  10%; 
+					 		margin-top:  15%; margin-bottom:  5%;  
+		}
+
+		.img_row2_left {	width:       auto; height:       80%; 
+					 		margin-left: 10px;
+					 		margin-top:  5%; margin-bottom:  10%;  
+		}
+		.img_row2_center {	width:       auto; height:       80%; 
+					 		margin-top:  5%; margin-bottom:  10%;  
+					 }
+		.img_row2_right {	width:       auto; height:       80%; 
+							
+					 		margin-right: 10px;
+					 		margin-top:  5%; margin-bottom:  10%;  
+		}
+
       	.div_background {
       		display: block;
       		margin-left:  auto;
@@ -26,51 +46,110 @@
       		margin-right: auto;
       		width:        100%;
       	}
-      	div#mat11 { float: left; height: 100px; width: 40%; background-color: red;}
-      	   #mat12 { float: left; height: 100px; width: 20%; background-color: orange;}
-      	   #mat13 { float: left; height: 100px; width: 40%; background-color: red;}
+      	div#grid_11 { float: left; height: 100px; width: 20%; background-color: red;    }
+      	   #grid_12 { float: left; height: 100px; width: 20%; background-color: orange; 
+      	   }
+      	   #grid_13 { float: left; height: 100px; width: 20%; background-color: red;    
+      	   }
+      	   #grid_14 { float: left; height: 100px; width: 20%; background-color: orange; }
+      	   #grid_15 { float: left; height: 100px; width: 20%; background-color: red;    }
 
-      	   #mat21 { float: left; height: 300px; width: 25%; background-color: yellow;}
-      	   #mat22 { float: left; height: 300px; width: 50%; background-color: green;}
-      	   #mat23 { float: left; height: 300px; width: 25%; background-color: purple;}
+      	   #grid_21 { float: left; height: 320px; width: 25%; background-color: yellow; }
+      	   #grid_22 { float: left; height: 320px; width: 50%; background-color: green;  }
+      	   #grid_23 { float: left; height: 320px; width: 25%; background-color: purple; }
+
+      	   #grid_211{ float: left; height: 80px; width: 100%; background-color: yellow;text-align: right;}
+      	   #grid_212{ float: left; height: 80px; width: 100%; background-color: red;   }
+      	   #grid_213{ float: left; height: 80px; width: 100%; background-color: green; text-align: center;  }
+
+      	   #grid_231{ float: left; height: 80px; width: 100%; background-color: yellow;}
+      	   #grid_232{ float: left; height: 80px; width: 100%; background-color: red;   text-align: right; }
+      	   #grid_233{ float: left; height: 80px; width: 100%; background-color: yellow;text-align: center;}
+
 	</style>
 </head>
-<body>
 
 <!-- ============ 
+					 		width:        100%; height:         100%; 
+					 		padding-left: 10px; padding-right:  50px; 
+					 		padding-top:  10px; padding-bottom: 10px; 
+							object-fit:  cover;
 <img vspace=10>  이미지에서 여백주기
 《성프란체스코전》
 <font size="1em" color="gray">
 이미지 중앙정렬방법: style의 img_background 참조
  -->
 
-
+<body>
 <header><h5>지덕체를 고루 갖춘, <br>멋지고, 아름답고, 예쁜 소운이</h5></header>
 
 <div class="div_background">
 <!-- ===== 1 행, height는 비율(%)가 안된다. ======= -->
 <div>
-	<div id="mat11" ></div>
-	<div id="mat12" >
-		<a href="index10_rhythmic_gymnastics.html" target="_blank">
-			<img src="images/images_index_page/icon_rythmic_gym.png"
-				 width=100% 
-			></img>
+	<div id="grid_11" ></div>
+	<div id="grid_12" >
+		<a href="index12_music.html" target="_blank">
+			<img class="img_row1_bottom" src="images/images_index_page/icon_12_music.jpg"></img>
 		</a> 
 	</div>
-	<div id="mat13" ></div>
+	<div id="grid_13" >
+		<a href="index10_rhythmic_gymnastics.html" target="_blank">
+			<img class="img_row1_top" src="images/images_index_page/icon_10_rythmic_gym.png"></img>
+		</a> 
+	</div>
+	<div id="grid_14" >
+		<a href="index11_sports_for_all.html" target="_blank">
+			<img class="img_row1_bottom" src="images/images_index_page/icon_11_sports_for_all.png"></img>
+		</a> 
+	</div>
+	<div id="grid_15" ></div>
 </div>
 
-<!-- ===== 2 행, height는 비율(%)가 안된다. ======= -->
+<!-- ===== 2 행, 중앙에 사진이 들어가는 공간이다.                 ======= -->
+<!-- ===== 좌측 4개: 국어, 외국어, 학교, 자격증 ======= -->
 <div>
-	<div id="mat21" ></div>
-	<div id="mat22" >
+	<div id="grid_21" >
+		<div id="grid_211" >
+			<a href="index20_writing.html" target="_blank">
+				<img class="img_row2_right" src="images/images_index_page/icon_20_korean_language.jpg"></img>
+			</a> 
+		</div>
+		<div id="grid_212" >
+			<a href="index21_foreign_language.html" target="_blank">
+				<img class="img_row2_left" src="images/images_index_page/icon_21_foreign_language.jpg"></img>
+			</a> 
+		</div>
+		<div id="grid_213" >
+			<a href="index21_foreign_language.html" target="_blank">
+				<img class="img_row2_center" src="images/images_index_page/icon_21_foreign_language.jpg"></img>
+			</a> 
+		</div>
+	</div>
+<!-- ===== 2행 가운데: 메인 이미지 ======= -->
+	<div id="grid_22" >
 		<img class="img_background" 
 			 src  ="images/images_index_page/soun_animation1.gif"
 			 >
 		</img>
 	</div>
-	<div id="mat23" ></div>
+<!-- ===== 2행 우측: 리듬체조, 바둑, 모델 -->
+	<div id="grid_23" >
+		<div id="grid_231" >
+			<a href="index10_rhythmic_gymnastics.html" target="_blank">
+				<img class="img_row2_left" src="images/images_index_page/icon_10_rythmic_gym.png"></img>
+			</a> 
+		</div>
+		<div id="grid_232" >
+			<a href="index14_baduk.html" target="_blank">
+				<img class="img_row2_right" src="images/images_index_page/icon_14_baduk.jpg"></img>
+			</a> 
+		</div>
+		<div id="grid_233" >
+			<a href="index10_rhythmic_gymnastics.html" target="_blank">
+				<img class="img_row2_center" src="images/images_index_page/icon_10_rythmic_gym.png"></img>
+			</a> 
+		</div>
+	</div>
 </div>
 
 <!-- ===== 3 행, height는 비율(%)가 안된다. ======= -->
