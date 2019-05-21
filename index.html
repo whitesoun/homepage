@@ -10,13 +10,13 @@
 		table {width:100%;}
       	table, th, td {border: 1px solid #bcbcbc; padding: 3px 0px 3px 5px; }
 
-		.img_row1_top	 {	width:        80%; height:       80%; 
+		.img_row1_top	 {	width:      auto; height:        64%; 
 					 		margin-left: 10%; margin-right:  10%; 
-					 		margin-top:   5%; margin-bottom: 15%;  
+					 		margin-top:   1%; margin-bottom: 35%;  
 		}
-		.img_row1_bottom {	width:        80%; height:       80%; 
+		.img_row1_bottom {	width:      auto; height:        64%; 
 					 		margin-left: 10%; margin-right:  10%; 
-					 		margin-top:  15%; margin-bottom:  5%;  
+					 		margin-top:  35%; margin-bottom:  1%;  
 		}
 
 		.img_row2_left {	width:       auto; height:       80%; 
@@ -46,34 +46,31 @@
       		margin-right: auto;
       		width:        100%;
       	}
-      	div#grid_11 { float: left; height: 100px; width: 20%; background-color: red;    }
-      	   #grid_12 { float: left; height: 100px; width: 20%; background-color: orange; 
-      	   }
-      	   #grid_13 { float: left; height: 100px; width: 20%; background-color: red;    
-      	   }
-      	   #grid_14 { float: left; height: 100px; width: 20%; background-color: orange; }
-      	   #grid_15 { float: left; height: 100px; width: 20%; background-color: red;    }
+      	div#grid_11 { float: left; height: 100px; width: 16%; background-color: white; }
+      	   #grid_12 { float: left; height: 100px; width: 17%; background-color: white; }
+      	   #grid_13 { float: left; height: 100px; width: 17%; background-color: white; }
+      	   #grid_14 { float: left; height: 100px; width: 17%; background-color: white; }
+      	   #grid_15 { float: left; height: 100px; width: 17%; background-color: white; }
+      	   #grid_16 { float: left; height: 100px; width: 16%; background-color: white; }
 
-      	   #grid_21 { float: left; height: 320px; width: 25%; background-color: yellow; }
-      	   #grid_22 { float: left; height: 320px; width: 50%; background-color: green;  }
-      	   #grid_23 { float: left; height: 320px; width: 25%; background-color: purple; }
+      	   #grid_21 { float: left; height: 320px; width: 25%; background-color: white; }
+      	   #grid_22 { float: left; height: 320px; width: 50%; background-color: white; }
+      	   #grid_23 { float: left; height: 320px; width: 25%; background-color: white; }
 
-      	   #grid_211{ float: left; height: 80px; width: 100%; background-color: yellow;text-align: right;}
-      	   #grid_212{ float: left; height: 80px; width: 100%; background-color: red;   }
-      	   #grid_213{ float: left; height: 80px; width: 100%; background-color: green; text-align: center;  }
+      	   #grid_211{ float: left; height: 80px; width: 100%; background-color: white; text-align: right;}
+      	   #grid_212{ float: left; height: 80px; width: 100%; background-color: white;   }
+      	   #grid_213{ float: left; height: 80px; width: 100%; background-color: white; text-align: center;  }
+      	   #grid_214{ float: left; height: 80px; width: 100%; background-color: white; text-align: right;}
 
-      	   #grid_231{ float: left; height: 80px; width: 100%; background-color: yellow;}
-      	   #grid_232{ float: left; height: 80px; width: 100%; background-color: red;   text-align: right; }
-      	   #grid_233{ float: left; height: 80px; width: 100%; background-color: yellow;text-align: center;}
+      	   #grid_231{ float: left; height: 80px; width: 100%; background-color: white; }
+      	   #grid_232{ float: left; height: 80px; width: 100%; background-color: white; text-align: right; }
+      	   #grid_233{ float: left; height: 80px; width: 100%; background-color: white; text-align: center;}
+      	   #grid_234{ float: left; height: 80px; width: 100%; background-color: white; text-align: left;}
 
 	</style>
 </head>
 
 <!-- ============ 
-					 		width:        100%; height:         100%; 
-					 		padding-left: 10px; padding-right:  50px; 
-					 		padding-top:  10px; padding-bottom: 10px; 
-							object-fit:  cover;
 <img vspace=10>  이미지에서 여백주기
 《성프란체스코전》
 <font size="1em" color="gray">
@@ -89,20 +86,28 @@
 	<div id="grid_11" ></div>
 	<div id="grid_12" >
 		<a href="index12_music.html" target="_blank">
-			<img class="img_row1_bottom" src="images/images_index_page/icon_12_music.jpg"></img>
+			<img class="img_row1_bottom" src="images/images_index_page/icon_12_music.jpg"
+			     title="음악"></img>
 		</a> 
 	</div>
 	<div id="grid_13" >
-		<a href="index10_rhythmic_gymnastics.html" target="_blank">
-			<img class="img_row1_top" src="images/images_index_page/icon_10_rythmic_gym.png"></img>
+		<a href="index13_art.html" target="_blank">
+			<img class="img_row1_top" src="images/images_index_page/icon_13_art.jpg" 
+				 title="미술"></img>
 		</a> 
 	</div>
 	<div id="grid_14" >
 		<a href="index11_sports_for_all.html" target="_blank">
-			<img class="img_row1_bottom" src="images/images_index_page/icon_11_sports_for_all.png"></img>
+			<img class="img_row1_top" src="images/images_index_page/icon_11_sports_for_all.png" 
+				 title="생활체육"></img>
 		</a> 
 	</div>
-	<div id="grid_15" ></div>
+	<div id="grid_15" >
+		<a href="index10_rhythmic_gymnastics.html" target="_blank">
+			<img class="img_row1_bottom" src="images/images_index_page/icon_10_rythmic_gym.png" title="리듬체조"></img>
+		</a> 
+	</div>
+	<div id="grid_16" ></div>
 </div>
 
 <!-- ===== 2 행, 중앙에 사진이 들어가는 공간이다.                 ======= -->
@@ -111,17 +116,25 @@
 	<div id="grid_21" >
 		<div id="grid_211" >
 			<a href="index20_writing.html" target="_blank">
-				<img class="img_row2_right" src="images/images_index_page/icon_20_korean_language.jpg"></img>
+				<img class="img_row2_right" src="images/images_index_page/icon_20_korean_language.jpg" 
+					 title="글쓰기/국어"></img>
 			</a> 
 		</div>
 		<div id="grid_212" >
 			<a href="index21_foreign_language.html" target="_blank">
-				<img class="img_row2_left" src="images/images_index_page/icon_21_foreign_language.jpg"></img>
+				<img class="img_row2_left" src="images/images_index_page/icon_21_foreign_language.jpg"
+					 title="외국어"></img>
 			</a> 
 		</div>
 		<div id="grid_213" >
-			<a href="index21_foreign_language.html" target="_blank">
-				<img class="img_row2_center" src="images/images_index_page/icon_21_foreign_language.jpg"></img>
+			<a href="index50_school.html" target="_blank">
+				<img class="img_row2_center" src="images/images_index_page/icon_50_school.jpg"
+					 title="학교생활"></img>
+			</a> 
+		</div>
+		<div id="grid_214" >
+			<a href="index55_licence.html" target="_blank">
+				<img class="img_row2_right" src="images/images_index_page/icon_55_licence.jpg" title="자격증"></img>
 			</a> 
 		</div>
 	</div>
@@ -135,18 +148,26 @@
 <!-- ===== 2행 우측: 리듬체조, 바둑, 모델 -->
 	<div id="grid_23" >
 		<div id="grid_231" >
-			<a href="index10_rhythmic_gymnastics.html" target="_blank">
-				<img class="img_row2_left" src="images/images_index_page/icon_10_rythmic_gym.png"></img>
+			<a href="index14_baduk.html" target="_blank">
+				<img class="img_row2_left" src="images/images_index_page/icon_14_baduk.jpg" title="바둑"></img>
 			</a> 
 		</div>
 		<div id="grid_232" >
-			<a href="index14_baduk.html" target="_blank">
-				<img class="img_row2_right" src="images/images_index_page/icon_14_baduk.jpg"></img>
+			<a href="index25_diverse_activities.html" target="_blank">
+				<img class="img_row2_right" src="images/images_index_page/icon_25_diverse_activities.png"
+					 title="지식 지혜를 키우는 다양한 활동"></img>
 			</a> 
 		</div>
 		<div id="grid_233" >
-			<a href="index10_rhythmic_gymnastics.html" target="_blank">
-				<img class="img_row2_center" src="images/images_index_page/icon_10_rythmic_gym.png"></img>
+			<a href="index31_mountain.html" target="_blank">
+				<img class="img_row2_center" src="images/images_index_page/icon_31_mountain.png"
+					 title="아름다운 산하"></img>
+			</a> 
+		</div>
+		<div id="grid_234" >
+			<a href="index32_travel.html" target="_blank">
+				<img class="img_row2_left" src="images/images_index_page/icon_32_travel.png"
+					 title="여행/문화유적답사"></img>
 			</a> 
 		</div>
 	</div>
@@ -156,27 +177,7 @@
 <div>
 	<div class="container">
 		<div >
-<!-- ============ 10.리듬체조 ======= &emsp; ======================= -->
-			<div class="item_header col-md-4" align="left">
-				<a href="index10_rhythmic_gymnastics.html" target="_blank">
-					<strong>리듬체조</strong>
-				</a> 
-<!-- ============11. 생활체육: 인라인스케이트 ============================== -->
-				<br>
-				<a href="index11_sports_for_all.html" target="_blank">
-					<strong>생활체육</strong>
-				</a> 
-			</div>
 			<div class="item_header col-md-4" align="left" >
-<!-- ==================12. 음악======================== -->
-				<a href="index12_music.html" target="_blank">
-					<strong>음악</strong>
-				</a> 
-<!-- ==================13. 미술======================== -->
-				<br>
-				<a href="index13_art.html" target="_blank">
-					<strong>미술</strong>
-				</a> 
 <!-- ==================13. 서양 건축/미술 둘러보기  &emsp; ======================== -->
 				<br>
 				&emsp;&emsp;
@@ -190,21 +191,8 @@
 					<strong>서양 건축/미술 연표</strong>
 				</a> 
 			</div>
-<!-- ===============14. 바둑=========================== -->
+
 			<div class="item_header col-md-4" align="left" >
-				<a href="index14_baduk.html" target="_blank">
-					<strong>바둑</strong>
-				</a> 
-<!-- ===============15. 모델 =========================== -->
-				<br>
-				<a href="index15_model.html" target="_blank">
-					<strong>모델</strong>
-				</a> 
-<!-- ===============25. 기타교육(민속박물관 큐레이터, 오토마타 등)=========================== -->
-				<br>
-				<a href="index25_lesson.html" target="_blank">
-					<strong>지식/지혜를 키우는 활동</strong>
-				</a> 
 <!-- ====================30. 전시, 공연관람====================== -->
 				<br>
 				<a href="index30_watching.html" target="_blank">
@@ -212,41 +200,6 @@
 				</a> 
 			</div>
 
-			<div class="item_header col-md-4" align="left" >
-<!-- ===============20. 국어/글쓰기/경필=========================== -->
-				<a href="index20_writing.html" target="_blank">
-					<strong>글쓰기/국어</strong>
-				</a> 
-<!-- ===============21. 외국어-영어/한자=========================== -->
-				<br>
-				<a href="index21_foreign_language.html" target="_blank">
-					<strong>영어/한자</strong>
-				</a> 
-<!-- ==================50. 학교생활======================== -->
-				<br>
-				<a href="index50_school.html" target="_blank">
-					<strong>학교생활</strong>
-				</a> 
-<!-- ==================55. 자격증-한자/국어/역사/종이접기...======================== -->
-				<br>
-				<a href="index55_licence.html" target="_blank">
-					<strong>자격증</strong><font size="1em"> (한자/국어/역사/종이접기...)</font>
-				</a> 
-			</div>
-
-			<div class="item_header col-md-4" align="left" >
-<!-- ==============31. 아름다운 산하============================ -->
-				<a href="index31_mountain.html" target="_blank">
-					<strong>아름다운 산하</strong>
-				</a> 
-<!-- =====================32. 여행/문화유적===================== -->
-				<br>
-				<a href="index32_travel.html" target="_blank">
-					<strong>여행/문화유적답사</strong>
-				</a> 
-			</div>
-			<div class="item_header col-md-4" align="left" >
-			</div>
 <!-- ======================40. 천주교==================== -->
 			<div class="item_header col-md-4" align="left" >
 				<a href="mt_cheongkye.html" target="_blank">
