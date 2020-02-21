@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>제천시</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	
+	<style>
+		.pic1 {width:100%;}
+		table {width:100%;}
+      	table, th, td {border: 1px solid #bcbcbc;}
+	</style>
+
+	<script>
+		function simpleLightbox(imageUrl, bgColor, maxWidth){
+		    if(typeof bgColor === 'undefined'){
+		        bgColor = '#000';
+		    }
+		    if(typeof maxWidth === 'undefined'){
+		        maxWidth = '1100px';
+		    }
+		    window.open('', 'simpleLightbox').document.write('<html><head><meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, width=device-width" /></head><body style="margin:0;'+bgColor+';height:100%;" onclick="javascript:window.close(\'simpleLightbox\');"><table border="0" width="100%" height="100%"><tr><td valign="middle" align="center"><img style="position:relative;z-index:2;width:100%;max-width:'+maxWidth+';" src="'+imageUrl+'"/></td></tr></table></body></html>');
+		}
+	</script>
+
+</head>
+<body>
+
+	<div class="container">
+		<header><h3>제천, 한의학의 도시? 의림지의 도시</h3></header>
+		
+		<div class="row">
+			<div class="map_path col-md-6"> 
+				<img src="../images/images_trv/trv_kor09_jecheon_travel_path.jpg" class="pic1" vspace=10
+						 onclick="simpleLightbox('../images/images_trv/trv_kor09_jecheon_travel_path.jpg');">
+			</div>
+			<div class="path_detail col-md-6"> 
+				<table>
+					<thead>
+					<tr>
+						<td width=90 align="center">2020년<br> 02월 23일</td>
+						<td>제천, 배론성지, 주론산, 구학산</td>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td align="center">02월 24일</td>
+						<td>스파</td>
+					</tr>
+					<tr>
+						<td align="center">02월 25일</td>
+						<td>ㅁㄴㅇㄻㄴㅇㄹ</td>
+					</tr>
+					</tbody>
+			    </table>				
+			</div>
+		</div>
+
+
+		<div class="row">
+<!-- ==================배운 것======================== -->
+			<div class="subject_detail col-md-6">
+ 				<br> 
+				<h6><strong>느낀 점, 배운 것 </strong>
+				</h6>
+				<ul>
+				<li>지명의 유래: </li>
+				</ul>
+				<br>
+ 				<br> 
+			</div>
+<!-- ================== 주론산, 박달재 ======================== -->
+			<div class="subject_detail col-md-6">
+				주론산, 박달재		 
+				<img src="../images/images_trv/trv_kor09_jecheon_resom_juronsan.jpg" class="pic1"  
+						 onclick="simpleLightbox('../images/images_trv/trv_kor09_jecheon_resom_juronsan.jpg');">
+				구학산		 
+				<img src="../images/images_trv/trv_kor09_jecheon_kuhacksan.jpg" class="pic1"  
+						 onclick="simpleLightbox('../images/images_trv/trv_kor09_jecheon_kuhacksan.jpg.jpg');">
+
+				<br>
+			</div>
+<!-- ================== 배론 성지 ======================== -->
+			<div class="subject_detail col-md-6">
+				<h6><strong>배론성지</strong></h6>
+				지형이 배의 아랫 부분을 닮았다고 해서 붙여진 이름. 한문으로 주론이라고도 함<br>
+				<br>
+			</div>
+<!-- ======================================================== -->
+		</div>
+	</div>
+	
+	<div style="text-align:right; margin: 10px 20px 10px 20px;">
+	최초 작성: 2020년 02월 21일<br>
+	최종 수정: 2020년 02월 21일
+	</div>
+</body>
+</html>
