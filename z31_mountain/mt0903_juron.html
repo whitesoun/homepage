@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>주론산</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	
+	<style>
+		.pic1 {width:100%; object-fit: cover}
+		.pic2 {height:100%; object-fit: cover}
+		table {width:100%;  margin: 5px 0px 0px 0px;}
+      	table, th, td {border: 1px solid #bcbcbc;}
+	</style>
+
+	<script>
+		function simpleLightbox(imageUrl, bgColor, maxWidth){
+		    if(typeof bgColor === 'undefined'){
+		        bgColor = '#000';
+		    }
+		    if(typeof maxWidth === 'undefined'){
+		        maxWidth = '1100px';
+		    }
+		    window.open('', 'simpleLightbox').document.write('<html><head><meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, width=device-width" /></head><body style="margin:0;'+bgColor+';height:100%;" onclick="javascript:window.close(\'simpleLightbox\');"><table border="0" width="100%" height="100%"><tr><td valign="middle" align="center"><img style="position:relative;z-index:2;width:100%;max-width:'+maxWidth+';" src="'+imageUrl+'"/></td></tr></table></body></html>');
+		}
+	</script>
+
+</head>
+<body>
+
+	<div class="container">
+		<header><h3>주론산(903m)</h3></header>
+		<div class="row">
+			<div class="map_path col-md-6"> 
+				<img src="../images/images_trv/trv_kor09_jecheon_resom_resort_map.jpg" 
+				     class="pic1" 
+				     onclick="simpleLightbox('../images/images_trv/trv_kor09_jecheon_resom_resort_map.jpg');"	>
+			
+<!-- 					<script>
+						$('img').on('click', function(){ simpleLightbox($(this).attr('src'));});
+					</script>
+ -->				
+			</div>
+			<div class="path_detail col-md-6"> 
+				<table>
+					<thead>
+					<tr>
+						<td align="center"; width=90; ><strong>2020년 <br>02월 23일</strong></td>
+						<td>리솜 포레스트-산바라기 능선길-야생화길-감자바위/아차바위-주론산-천지송-리솜포레스트</td>
+					</tr>
+					</thead>
+			    </table>				
+			</div>
+
+			<div class="subject_detail col-md-6">
+ 				<br> 
+				<h6><strong>지명의 유래</strong>
+				</h6>
+				주론산 동쪽으로 배의 밑바닥 모양을 닮은 골짜기를 배론이라고 불렀으며, 배론의 한문 표기가 주론(舟배주論논의할론)이다 (왜 논의할 론자를 쓰는지 이해 안됨). <br>
+				박달재로 이어지는 능선길이 있으며, 매우 가파른 육산이다. 해발 900m의 위용을 느낄 수 있다. 
+				----정상석 사진 추가하자.
+				<br><br>
+			</div>
+
+
+			<div class="subject_detail col-md-6">
+				<br>
+				<h6><strong>느낀 점, 배운 것<br></strong>
+				</h6>
+				<ul>
+				<li>2주전 노인봉 대비 짧은 산행 시간에도 불구하고 심한 경사도로 인해 산행은 훨씬 더 피로했다.</li>
+				<li>눈이 오면 썰매타기에 매우 적합할 것으로 예상된다. 그러나, 찾는 이가 별로 없어 눈길을 내며 산을 올라야 할 것 같다.</li>
+				<li>리조트에서 관리하는 둘레길은 이정표가 잘 되어 있다.</li>
+				<li>북사면에 남아 있는 잔설이 산행을 즐거움을 더했다.</li>
+				</ul>
+				<br>
+			</div>
+
+		</div>
+	</div>
+
+<!--  div 보더 표시: border:1px solid red; -->
+	<br><br>	
+	<div style="text-align:right; margin: 0px 20px 10px 20px;">
+	최초 작성: 2020년 02월 27일<br>
+	최종 수정: 2020년 02월 27일
+	</div>
+</body>
+</html>
