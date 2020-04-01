@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>서울 둘레길</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	
+	<style>
+		.pic1 {width:100%; object-fit: cover}
+		.pic2 {height:100%; object-fit: cover}
+		table {width:100%;  margin: 5px 0px 0px 0px;}
+      	table, th, td {border: 1px solid #bcbcbc;}
+	</style>
+
+	<script>
+		function simpleLightbox(imageUrl, bgColor, maxWidth){
+		    if(typeof bgColor === 'undefined'){
+		        bgColor = '#000';
+		    }
+		    if(typeof maxWidth === 'undefined'){
+		        maxWidth = '1100px';
+		    }
+		    window.open('', 'simpleLightbox').document.write('<html><head><meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, width=device-width" /></head><body style="margin:0;'+bgColor+';height:100%;" onclick="javascript:window.close(\'simpleLightbox\');"><table border="0" width="100%" height="100%"><tr><td valign="middle" align="center"><img style="position:relative;z-index:2;width:100%;max-width:'+maxWidth+';" src="'+imageUrl+'"/></td></tr></table></body></html>');
+		}
+	</script>
+
+</head>
+<body>
+
+	<div class="container">
+		<header><h3>서울 둘레길의 산들</h3></header>
+		<div class="row">
+			<div class="map_path col-md-6"> 
+				<img src="../images/images_mt/seoul_circumference.jpg" 
+				     class="pic1" 
+				     onclick="simpleLightbox('../images/images_mt/seoul_circumference.jpg');"	>
+			
+<!-- 					<script>
+						$('img').on('click', function(){ simpleLightbox($(this).attr('src'));});
+					</script>
+ -->				
+			</div>
+			<div class="path_detail col-md-6"> 
+				<table>
+					<tr>
+						<td align="center" width=90 >
+							<a href="https://photos.app.goo.gl/2zs6oVR9TKc8pRDD7" target="_blank">
+								2012년<br>03월 18일
+							</a>
+						</td>
+						<td><b>우면산</b>(해발 ??m): 예술의전당-정상(소망탑)-예술의전당</td>
+					</tr>
+					<tr>
+						<td align="center" width=90 >
+							<a href="https://photos.app.goo.gl/WgMvh5ybdNgTxcB58" target="_blank">
+								2013년<br>09월 22일
+							</a>
+						</td>
+						<td><b>구룡산</b>(해발 306m): 구룡마을-구룡산-구룡마을</td>
+					</tr>
+					<tr>
+						<td align="center" width=90 >
+							<a href="https://photos.app.goo.gl/vGTYmqnjk2S8ThN16" target="_blank">
+								2013년<br>09월 08일
+							</a>
+						</td>
+						<td><b>대모산</b>(해발 293m): 일원지하차도-대모산-도선여객</td>
+					</tr>
+			    </table>				
+			</div>
+
+			<div class="subject_detail col-md-6">
+ 				<br> 
+				<h6><strong>서울 둘레길의 산들</strong>
+				</h6>
+				나름 조망도 좋고, 등산의 재미가 있다. 다른 산들도 가보자~
+				<br><br>
+			</div>
+
+
+			<div class="subject_detail col-md-6">
+				<br>
+				<h6><strong>느낀 점, 배운 것<br></strong>
+				</h6>
+				<ul>
+				<li>대모산 하산길이 너무 혼란스럽다. 길을 잃었다.</li>
+				<li>구룡마을 앞이 개포 래미안 블래스티지이다.</li>
+				</ul>
+				<br>
+			</div>
+
+		</div>
+	</div>
+
+<!--  div 보더 표시: border:1px solid red; -->
+	<br><br>	
+	<div style="text-align:right; margin: 0px 20px 10px 20px;">
+	최초 작성: 2020년 02월 27일<br>
+	최종 수정: 2020년 02월 27일
+	</div>
+</body>
+</html>
