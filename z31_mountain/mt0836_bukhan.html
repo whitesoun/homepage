@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>북한산</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	
+	<style>
+		.width100 {width:100%;}
+		.pic1 {width: 80px;    height:     80px; object-fit: cover; 
+			   display: block; margin-left: auto; margin-right: auto; }
+		table {width:100%;  margin: 5px 0px 0px 0px; border: 1px solid #bcbcbc;}
+      	.path_td   {border: 1px solid #bcbcbc;}
+      	.column4_th{ height:82px; border: 1px solid #bcbcbc;}
+      	.column4_td{ text-align:center; font-size: small; border: 1px solid #bcbcbc;}
+      	
+	</style>
+
+	<script>
+		function simpleLightbox(imageUrl, bgColor, maxWidth){
+		    if(typeof bgColor === 'undefined'){
+		        bgColor = '#000';
+		    }
+		    if(typeof maxWidth === 'undefined'){
+		        maxWidth = '1100px';
+		    }
+		    window.open('', 'simpleLightbox').document.write('<html><head><meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, width=device-width" /></head><body style="margin:0;'+bgColor+';height:100%;" onclick="javascript:window.close(\'simpleLightbox\');"><table border="0" width="100%" height="100%"><tr><td valign="middle" align="center"><img style="position:relative;z-index:2;width:100%;max-width:'+maxWidth+';" src="'+imageUrl+'"/></td></tr></table></body></html>');
+		}
+		
+		function button1_click() {
+			alert("버튼1을 누르셨습니다.");
+		}
+		</script>
+
+</head>
+<body>
+
+	<div class="container">
+		<header><h3>북한산(835.6m)</h3></header>
+		<div class="row">
+			<div class="map_path col-md-6"> 
+				<img src="../images/images_mt/mt0836_bukhan/mt0836_bukhan_with_path.png" class="width100" 
+						 onclick="simpleLightbox('../images/images_mt/mt0836_bukhan/mt0836_bukhan_with_path.png');">
+			</div>
+			<div class="path_detail col-md-6"> 
+				<table>
+					<tbody>
+					<tr>
+						<td class="path_td" width=90 align="center"><strong>2020년<br>10월 03일</strong></td>
+						<td class="path_td">칼바위 능선??<br>
+							<img src="../images/images_deco/green.gif" width=30 height=5>
+						     11.38km, 6시간 10분
+						</td>
+					</tr>
+			    </table>	
+			</div>
+
+			<div class="subject_detail col-md-6">
+ 				<br> 
+				<h6><strong><br>북한산</strong>
+				</h6>
+				ㅁㄴㅇㄻㄴ.......
+				<br>
+				<a href="https://www.beopbo.com/news/articleView.html?idxno=94348">
+					법보신문 채문기의 길따라 절에 들다: 41. 관악산 공원- 삼막사- 연주암- 연주대
+				</a>
+				<br>
+				<br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="subject_detail col-md-6">
+				<br>
+				<h6><strong>느낀 점, 배운 것<br></strong>
+				</h6>
+				<ul>
+					<li>기암절벽. 주의 필요</li>
+					<li>삼각산</li>
+					<li>인수봉</li>
+					<li>...</li>
+				</ul>
+				<br>
+			</div>
+		</div>
+</div>
+	
+	<div style="text-align:right; margin: 0px 20px 10px 20px;">
+	최초 작성: 2020년 09월 01일<br>
+	최종 수정: 2018년 09월 01일
+	</div>
+</body>
+</html>
