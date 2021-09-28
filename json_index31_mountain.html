@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Our superheroes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+ 	<style>
+		.width100 {width:100%;}
+		.pic1 {width: 80px;    height:     80px; object-fit: cover; 
+			   display: block; margin-left: auto; margin-right: auto; }
+		table {width:100%;  margin: 5px 0px 0px 0px; border: 1px solid #bcbcbc;}
+      	.path_td   {border: 1px solid #bcbcbc;}
+      	.column4_th{ height:82px; border: 1px solid #bcbcbc;}
+      	.column4_td{ text-align:center; font-size: small; border: 1px solid #bcbcbc;}
+      	
+	</style>
+ 
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+    const header = document.querySelector('header');
+    const section = document.querySelector('section');
+
+    let requestURL = 'file:///D:/A_JAVA/eclipse-workspace/ProjectSoun/WebContent/json/json_mt_seoark_trip.json';
+    let request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function() {
+      const superHeroes = request.response;
+      populateHeader(superHeroes);
+//      showHeroes(superHeroes);
+    }
+
+    function showHeroes(obj) {
+      const heroes = obj['members'];
+
+      for(let i = 0; i < heroes.length; i++) {
+        const myArticle = document.createElement('article');
+        const myH2 = document.createElement('h2');
+        const myPara1 = document.createElement('p');
+        const myPara2 = document.createElement('p');
+        const myPara3 = document.createElement('p');
+        const myList = document.createElement('ul');
+
+        myH2.textContent = heroes[i].name;
+        myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+        myPara2.textContent = 'Age: ' + heroes[i].age;
+        myPara3.textContent = 'Superpowers:';
+
+        const superPowers = heroes[i].powers;
+        for(let j = 0; j < superPowers.length; j++) {
+          const listItem = document.createElement('li');
+          listItem.textContent = superPowers[j];
+          myList.appendChild(listItem);
+        }
+
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myList);
+
+        section.appendChild(myArticle);
+      }
+    }
+    
+    function populateHeader(obj) {
+        const myH1 = document.createElement('h1');
+        myH1.textContent = "등산 일지"; // obj['squadName'];
+        header.appendChild(myH1);
+
+//        const myPara = document.createElement('p');
+//        myPara.textContent = 'Hometown: ' + obj['homeTown'] + ' // Formed: ' + obj['formed'];
+//        header.appendChild(myPara);
+        
+        // 표 만들기 테스트
+        const table = document.createElement('table');
+
+        var thead = document.createElement("thead");
+        var tr = document.createElement("tr");
+        
+        for(j in obj )
+        {
+         var td = document.createElement("th");
+//         td.id = "head" + "_" + 1;
+//         td.className = "head " + obj['squadName'];
+//         td.name = j.start_date;
+         td.appendChild(document.createTextNode(j.start_date));
+
+         tr.appendChild(td);
+        }
+        thead.appendChild(tr);
+        table.appendChild(thead);
+        
+        header.appendChild(table);
+   
+    
+    }
+    
+ // JSON형태의 데이터를 테이블로 만든다
+    function JSON2Table(table, name, data)
+    {
+     // 헤더가 없다면, 해더를 만든다.
+     if( table.tHead == null )
+     {
+      var thead = document.createElement("thead");
+      var tr = document.createElement("tr");
+      tr.id = "head";
+      
+      for( j in data[0] )
+      {
+       var td = document.createElement("th");
+       td.id = "head" + "_" + j;
+       td.className = "head " + j.toString();
+       td.name = j.toString();
+       td.appendChild(document.createTextNode(j));
+
+       tr.appendChild(td);
+      }
+      thead.appendChild(tr);
+      table.appendChild(thead);
+     }
+
+     // 내용을 넣는다
+     for(var i=0; i < data.length; i++)
+     {
+      var tr = document.createElement("tr");
+      tr.id = name + "_" + data[i].id;
+
+      for( j in data[i] )
+      {
+       var td = document.createElement("td");
+       td.id = tr.id + "_" + j;
+       td.className = j.toString();
+
+       td.appendChild(document.createTextNode(data[i][j]));
+
+       tr.appendChild(td);
+      }
+
+      table.tBodies[0].appendChild(tr);
+     }
+
+
+    }    
+
+    </script>
+  </body>
+</html>
