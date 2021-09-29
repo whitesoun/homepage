@@ -2,33 +2,30 @@
 	{
 		"start_date" : 2019,
 		"finish_date" : 2021,
-		"hiking_days" : 1,	// 등산 일수
+		"hiking_days" : 1,	
 		"path" : [ 
 			"설악동, 흔들바위, 계조암, 울산바위, 권금성, 대명 델피노"
 		],
-		"distance" :   4200,	// 단위: m
-		"hiking_time" : 210,	// 단위: 분
-		"earned_height" : 0,	// 획득고도: m
-		"heighest" :      0,	// 최고점: m
+		"distance" :   4200,	
+		"hiking_time" : 210,	
+		"earned_height" : 0,	
+		"heighest" :      0,	
 		"hiking_ref_url" : "",
 		"google_photo__url" : "", 
 	},
 	{
 		"start_date" :  2017,
 		"finish_date": 2008,
-		"hiking_days":	2,	// 등산 일수
+		"hiking_days":	2,	
 		"path": [
 			"설악동, 흔들바위, 계조암, 울산바위, 권금성, 대명 델피노",
 		],
-		"distance":   5300,	// 단위: m
-		"hiking_time": 310,	// 단위: 분
-		"earned_height": 230,	// 획득고도: m
-		"heighest":      450,	// 최고점: m
+		"distance":   5300,	
+		"hiking_time": 310,	
+		"earned_height": 230,	
+		"heighest":      450,	
 		"hiking_ref_url": "",
 		"google_photo__url": "", 
 	},
 ]
 
-//2021-09-25, mountain hiking history for mt. seorak.
-//*****????? 날짜에 따른 일정은 어떻게 구분할까?
-//         path 변수를 배열로? 
