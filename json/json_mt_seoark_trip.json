@@ -13,21 +13,21 @@
 		"earned_height" : 0,	
 		"heighest" :      0,	
 		"hiking_ref_url" : "",
-		"google_photo__url" : "", 
+		"google_photo__url" : "" 
 	},
 	{
 		"start_date" :  2017,
 		"finish_date": 2008,
 		"hiking_days":	2,	
 		"path": [
-			"설악동, 흔들바위, 계조암, 울산바위, 권금성, 대명 델피노",
+			"설악동, 흔들바위, 계조암, 울산바위, 권금성, 대명 델피노"
 		],
 		"distance":   5300,	
 		"hiking_time": 310,	
 		"earned_height": 230,	
 		"heighest":      450,	
 		"hiking_ref_url": "",
-		"google_photo__url": "", 
-	},
+		"google_photo__url": ""
+	}
 ]
 }
