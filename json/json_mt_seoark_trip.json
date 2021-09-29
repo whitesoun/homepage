@@ -1,3 +1,5 @@
+{
+	"trips": 
 [
 	{
 		"start_date" : 2019,
@@ -28,4 +30,4 @@
 		"google_photo__url": "", 
 	},
 ]
-
+}
