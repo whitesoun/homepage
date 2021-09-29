@@ -1,7 +1,7 @@
 [
 	{
-		"start_date" : Date(2021, 01, 31, 09, 30, 0, 0),
-		"finish_date" : Date(2021, 01, 31, 09, 30, 0, 0),
+		"start_date" : 2019,
+		"finish_date" : 2021,
 		"hiking_days" : 1,	// 등산 일수
 		"path" : [ 
 			"설악동, 흔들바위, 계조암, 울산바위, 권금성, 대명 델피노"
@@ -14,8 +14,8 @@
 		"google_photo__url" : "", 
 	},
 	{
-		"start_date" :  Date(2022, 01, 31, 09, 30, 0, 0),
-		"finish_date": Date(2022, 01, 31, 09, 30, 0, 0),
+		"start_date" :  2017,
+		"finish_date": 2008,
 		"hiking_days":	2,	// 등산 일수
 		"path": [
 			"설악동, 흔들바위, 계조암, 울산바위, 권금성, 대명 델피노",
