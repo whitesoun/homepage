@@ -23,4 +23,100 @@
     "google_photo_url": "",
     "rambler_url": ""
   }
+  {
+    "start_date": "2003-02-08T09:09:09.000Z",
+    "trip_days": 1,
+    "path": "설악동-울산바위",
+    "path_color": "blue",
+    "distance": "??km",
+    "max_height": "",
+    "height_earned": "",
+    "trip_time": "??시간 ??분",
+    "google_photo_url": "",
+    "rambler_url": ""
+  }
+  {
+    "start_date": "2002-06-30T09:09:09.000Z",
+    "trip_days": 1,
+    "path": "한계령-서북능선-끝청봉-대청봉-오색약수",
+    "path_color": "purple",
+    "distance": "??km",
+    "max_height": "",
+    "height_earned": "",
+    "trip_time": "??시간 ??분",
+    "google_photo_url": "",
+    "rambler_url": ""
+  }
+  {
+    "start_date": "1999-05-22T09:09:09.000Z",
+    "trip_days": 2,
+    "path": "백담사-수렴동대피소-가야동계곡-봉정암-소청산장-봉정암-사리탑-용아장성릉-수렴동대피소-백담사",
+    "path_color": "orange",
+    "distance": "??km",
+    "max_height": "",
+    "height_earned": "",
+    "trip_time": "??시간 ??분",
+    "google_photo_url": "",
+    "rambler_url": ""
+  }
+  {
+    "start_date": "1997-08-23T09:09:09.000Z",
+    "trip_days": 1,
+    "path": "장수대-대승령-12선녀계곡-남교리",
+    "path_color": "sky",
+    "distance": "??km",
+    "max_height": "",
+    "height_earned": "",
+    "trip_time": "??시간 ??분",
+    "google_photo_url": "",
+    "rambler_url": ""
+  }
+  {
+    "start_date": "1994-10-02T09:09:09.000Z",
+    "trip_days": 2,
+    "path": "설악동-비선대-마등령-공룡능선(나한봉-천화대-신선봉)-희운각(1박)-무너미고개-천불동-비선대-설악동",
+    "path_color": "green",
+    "distance": "??km",
+    "max_height": "",
+    "height_earned": "",
+    "trip_time": "??시간 ??분",
+    "google_photo_url": "",
+    "rambler_url": ""
+  }
+  {
+    "start_date": "1992-10-30T09:09:09.000Z",
+    "trip_days": 3,
+    "path": "용대리-백담사-백담산장(1박)-수렴동대피소-구곡담계곡-사자암-봉정암-소청(1박)-대청-소청 -희운각-천불동계곡- 설악동",
+    "path_color": "blue",
+    "distance": "??km",
+    "max_height": "",
+    "height_earned": "",
+    "trip_time": "??시간 ??분",
+    "google_photo_url": "",
+    "rambler_url": ""
+  }
+  {
+    "start_date": "1991-01-13T09:09:09.000Z",
+    "trip_days": 1,
+    "path": "설악동-비선대-샛길계곡(?)",
+    "path_color": "sky",
+    "distance": "??km",
+    "max_height": "",
+    "height_earned": "",
+    "trip_time": "??시간 ??분",
+    "google_photo_url": "",
+    "rambler_url": ""
+  }
+  {
+    "start_date": "1983-05-15T09:09:09.000Z",
+    "trip_days": 1,
+    "path": "설악동-비선대 (수학여행)",
+    "path_color": "blue",
+    "distance": "??km",
+    "max_height": "",
+    "height_earned": "",
+    "trip_time": "??시간 ??분",
+    "google_photo_url": "",
+    "rambler_url": ""
+  }
 ]
