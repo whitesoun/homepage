@@ -1,26 +1,26 @@
 [
   {
-    "start_date": "2021-04-23T09:25:43.511Z",
-    "trip_days": 3,
-    "path": "한계령, 서북능선, 중청봉, 대청봉 일몰, 중청대피소(1박), 대청봉 일출, 희운각, 천불동계곡, 설악동",
-    "path_color": "green",
-    "distance": "3.5km",
-    "max_height": "890m",
-    "height_earned": "500m",
-    "trip_time": "3시간 30분",
+    "start_date": "2017-10-28T09:09:09.000Z",
+    "trip_days": 2,
+    "path": "오색약수 별님이네 민박(1박), 한계령, 서북능선, 중청봉, 대청봉 일몰, 중청대피소(1박), 대청봉 일출, 희운각, 천불동계곡, 설악동",
+    "path_color": "red",
+    "distance": "18.44km",
+    "max_height": "",
+    "height_earned": "",
+    "trip_time": "16시간 31분",
     "google_photo_url": "https://photos.app.goo.gl/ipLvp9LU1pCTWXvd9",
     "rambler_url": "https://photos.app.goo.gl/ipLvp9LU1pCTWXvd9"
   },
   {
-    "start_date": "2014-04-23T18:25:43.511Z",
+    "start_date": "2013-10-09T09:09:09.000Z",
     "trip_days": 1,
-    "path": "설악동 백담사",
-    "path_color": "orange",
-    "distance": "3.5km",
-    "max_height": "890m",
-    "height_earned": "500m",
+    "path": "설악동, 흔들바위, 계조암, 울산바위, 권금성, 대명 델피노",
+    "path_color": "blue",
+    "distance": "4.5km",
+    "max_height": "",
+    "height_earned": "",
     "trip_time": "3시간 30분",
-    "google_photo_url": "https://photos.app.goo.gl/ipLvp9LU1pCTWXvd9",
-    "rambler_url": "https://photos.app.goo.gl/ipLvp9LU1pCTWXvd9"
+    "google_photo_url": "",
+    "rambler_url": ""
   }
 ]
