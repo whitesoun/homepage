@@ -1,0 +1,86 @@
+﻿[ 
+  {
+    "start_date": "2021-05-22T09:09:09.000Z",
+    "trip_days": 1, 
+    "path": "정릉유원지 탐방센터, 서울둘레길 명상길, 포토전망대, 형제봉, 형제봉지킴터",
+    "path_color": "purple",
+    "distance": "4.8km",
+    "max_height": "483m",
+    "height_earned": "371m",
+    "trip_time": "3시간 24분",
+    "google_photo_url": "",
+    "rambler_url": "https://www.ramblr.com/web/mymap/trip/641990/3024752/"
+  },
+  {
+    "start_date": "2021-02-28T09:09:09.000Z",
+    "trip_days": 1,
+    "path": "정릉유원지 탐방센터, 내원사, 칼바위, 대동문, 이준열사 묘, 아카데이하우스 탐방센터",
+    "path_color": "blue",
+    "distance": "6km",
+    "max_height": "617m",
+    "height_earned": "699m",
+    "trip_time": "4시간 33분",
+    "google_photo_url": "",
+    "rambler_url": "https://www.ramblr.com/web/mymap/trip/641990/2782359/"
+  },
+  {
+    "start_date": "2020-12-08T09:09:09.000Z",
+    "trip_days": 1,
+    "path": "불광역, 대호아파트, 족두리봉 (지나침), 향로봉, 비봉 진흥왕순수비, 승가사, 구기계곡",
+    "path_color": "green",
+    "distance": "8km",
+    "max_height": "573m",
+    "height_earned": "694m",
+    "trip_time": "4시간 57분",
+    "google_photo_url": "",
+    "rambler_url": "https://www.ramblr.com/web/mymap/trip/641990/2581244/"
+  },
+  {
+    "start_date": "2020-11-13T09:09:09.000Z",
+    "trip_days": 1,
+    "path": "효자치안센터(버스), 서암문, 원효암, 원효봉, 북문, 효자리계곡, Y자나무 앞 포토포인트, 3679공병부대(버스)",
+    "path_color": "green",
+    "distance": "5.3km",
+    "max_height": "529m",
+    "height_earned": "434m",
+    "trip_time": "3시간 53분",
+    "google_photo_url": "",
+    "rambler_url": "https://www.ramblr.com/web/mymap/trip/641990/2516174/"
+  },
+  {
+    "start_date": "2020-07-12T09:09:09.000Z",
+    "trip_days": 2,
+    "path": "우이동, 하루재, 숨은벽 정상, 백운대피소, 하루재, 우이동",
+    "path_color": "blue_true",
+    "distance": "3.65km",
+    "max_height": "",
+    "height_earned": "",
+    "trip_time": "5시간 9분",
+    "google_photo_url": "",
+    "rambler_url": ""
+  },
+  {
+    "start_date": "2003-08-08T09:09:09.000Z",
+    "trip_days": 1,
+    "path": "진관외동, 삼천사, 군인수영장, 부왕동암문, 진관외동",
+    "path_color": "orange",
+    "distance": "약 4km",
+    "max_height": "",
+    "height_earned": "",
+    "trip_time": "약 3시간",
+    "google_photo_url": "",
+    "rambler_url": ""
+  },
+  {
+    "start_date": "1999-07-31T09:09:09.000Z",
+    "trip_days": 2,
+    "path": "북한산성 탐방지원센터-위문-백운대-위문-대서문-북한산유원지",
+    "path_color": "red",
+    "distance": "약 6km",
+    "max_height": "",
+    "height_earned": "",
+    "trip_time": "약 5시간",
+    "google_photo_url": "",
+    "rambler_url": ""
+  }
+]
