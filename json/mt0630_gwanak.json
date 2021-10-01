@@ -9,7 +9,7 @@
 		"height_earned": "428m",
 		"trip_time": "6시간 55분",
 		"google_photo_url": "",
-		"rambler_url": ""
+		"rambler_url": "https://www.ramblr.com/web/mymap/trip/641990/3403068/"
 	},
 	{
 		"start_date": "2021-09-05T09:09:09.000Z",
@@ -21,7 +21,19 @@
 		"height_earned": "",
 		"trip_time": "2시간 23분",
 		"google_photo_url": "",
-		"rambler_url": ""
+		"rambler_url": "https://www.ramblr.com/web/mymap/trip/641990/3329549/"
+	},
+	{
+		"start_date": "2021-07-13T09:09:09.000Z",
+		"trip_days": 1,
+		"path": "서울둘레길, 관악문, 돌산국기봉, 보덕사, 고시공원",
+		"path_color": "blue",
+		"distance": "4.6km",
+		"max_height": "259m",
+		"height_earned": "283m",
+		"trip_time": "2시간 36분",
+		"google_photo_url": "",
+		"rambler_url": "https://www.ramblr.com/web/mymap/trip/641990/3183606/"
 	},
 	{
 		"start_date": "2021-07-12T09:09:09.000Z",
@@ -33,7 +45,7 @@
 		"height_earned": "",
 		"trip_time": "2시간 20분",
 		"google_photo_url": "",
-		"rambler_url": ""
+		"rambler_url": "https://www.ramblr.com/web/mymap/trip/641990/3181317/"
 	},
 	{
 		"start_date": "2020-09-27T09:09:09.000Z",
@@ -87,7 +99,7 @@
 		"start_date": "2020-05-21T09:09:09.000Z",
 		"trip_days": 1,
 		"path": "서울대 정문, 관악문, 호수공원, 제1광장, 제2광장, 철쭉동산, 이정표 삼거리, 장군능선 깔딱고개, 국기봉,(뒤돌아섬), 거북바위, 삼막사, 경인교대",
-		"path_color": "blue",
+		"path_color": "blue_true",
 		"distance": "7.53km",
 		"max_height": "",
 		"height_earned": "",
@@ -152,7 +164,7 @@
 		"max_height": "",
 		"height_earned": "",
 		"trip_time": "6시간  10분",
-		"google_photo_url": "",
+		"google_photo_url": "https://photos.google.com/share/AF1QipOLSQ7Ln2LugKDQojLaFmbsu5VU1ubTg7WlG6AN-Lams8coZP_7u_8VLjjK1PXsOA?key=dHAwQ19zZWNFYmI4eTVUWnY1RmVsRW94QUcwWVJ3",
 		"rambler_url": ""
 	}
 ]

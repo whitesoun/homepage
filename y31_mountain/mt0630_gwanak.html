@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>관악산</title>
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/comet_style.css">
 	
 	<style>
 		.width100 {width:100%;}
@@ -43,7 +44,15 @@
 				<img src="../images/images_mt/mt0630_gwanak/mt0630_gwanak_with_path_dd.png" class="width100" 
 						 onclick="simpleLightbox('../images/images_mt/mt0630_gwanak/mt0630_gwanak_with_path_dd.png');">
 			</div>
+			
 			<div class="path_detail col-md-6"> 
+				<!-- ========== 이곳에 등산 이력이 표시됨. === -->
+				<div id="mt_trip_list" class="mt_trip_table">
+				</div>
+			</div>
+			
+			<div class="path_detail col-md-6"> 
+
 				<table>
 					<tbody>
 					<tr>
@@ -95,8 +104,6 @@
 					</tr>
 
 			    </table>	
-			</div>
-			<div class="path_detail col-md-6"> 
 				<table>
 					<tbody>
 <tr>
@@ -365,5 +372,12 @@
 	최초 작성: 2020년 09월 01일<br>
 	최종 수정: 2018년 09월 01일
 	</div>
+
+	<script>
+		// 2021-09-30, 등산 경로를 보여주는 자바 스크립트 호출
+		let requestURL = 'https://whitesoun.github.io/homepage/json/mt0630_gwanak.json';
+	</script>
+	<script src = "../js/create_mt_trip.js"></script>
+
 </body>
 </html>
