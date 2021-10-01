@@ -47,7 +47,7 @@
 			//  연월일을 써준다. 필요시 URL 연결
 			if(obj[i].google_photo_url) {
 				tdCol1.innerHTML = '<a href="' + obj[i].google_photo_url + '" target="_blank">'
-					             + year+'년<br>'+month+'월 '+date+'일></a>';
+					             + year+'년<br>'+month+'월 '+date+'일</a>';
 			}
 			else {
 				tdCol1.innerHTML = year+'년<br>'+month+'월 '+date+'일';
@@ -56,10 +56,30 @@
 				tdCol1.innerHTML += "<br>(" + String(obj[i].trip_days-1)+ "박" + String(obj[i].trip_days) + "일)";
 			}
 
-			// 두번째 컬럼: 등산 경로, 지도상의 경로 색깔, 거리, 시간을 보여준다. 
-			var	line2 = '<img src="../images/images_deco/' + obj[i].path_color + '.gif" width=30 height=5> '
-					  + obj[i].distance + ' ' + obj[i].trip_time;
-			tdCol2.innerHTML = obj[i].path + '<br>' + line2;
+			// 두번째 컬럼: 등산 경로, 지도상의 경로 색깔, 거리, 시간을 보여준다.
+			var line2_1;	// 두번째 컬럼: 등산 경로, 지도상의 경로 색깔, 거리, 시간을 보여준다.
+			var line2_2;	// 두번째 컬럼: 획득고도 또는 최고점
+			var sDistance;	// 걸리에 램블러 URL을 연결하기 위한 변수
+			
+			// 램블러 URL이 있으면 거리에 링크를 걸어 준다.
+			if(obj[i].rambler_url) {
+				sDistance = '<a href="' + obj[i].rambler_url + '" target="_blank">' + obj[i].distance + '</a>'; 
+			}
+			else {
+				sDistance = obj[i].distance; 
+			}
+			line2_1 = '<img src="../images/images_deco/' + obj[i].path_color + '.gif" width=30 height=5> '
+			  + sDistance + ' ' + obj[i].trip_time;
+
+			// 두번째 컬럼: 획득고도
+			if(obj[i].height_earned) {
+				line2_2 = ', 획득고도: ' + obj[i].height_earned;
+			}
+			else if(obj[i].max_height) {
+				line2_2 = ', 최고점: ' + obj[i].max_height;
+			}
+			
+			tdCol2.innerHTML = obj[i].path + '<br>' + line2_1 + line2_2;
 			
 			divRow.appendChild(tdCol1);
 			divRow.appendChild(tdCol2);

@@ -1,5 +1,17 @@
 ﻿[ 
   {
+    "start_date": "2021-07-06T16:07:09.000Z",
+    "trip_days": 1, 
+    "path": "북한산 생태숲, 솔샘 발원지, 빨래골, 서울둘레길 8코스",
+    "path_color": "red",
+    "distance": "2.3km",
+    "max_height": "203m",
+    "height_earned": "41m",
+    "trip_time": "2시간 23분",
+    "google_photo_url": "",
+    "rambler_url": "https://www.ramblr.com/web/mymap/trip/641990/3166655/"
+  },
+  {
     "start_date": "2021-05-22T09:09:09.000Z",
     "trip_days": 1, 
     "path": "정릉유원지 탐방센터, 서울둘레길 명상길, 포토전망대, 형제봉, 형제봉지킴터",
@@ -49,7 +61,7 @@
   },
   {
     "start_date": "2020-07-12T09:09:09.000Z",
-    "trip_days": 2,
+    "trip_days": 1,
     "path": "우이동, 하루재, 숨은벽 정상, 백운대피소, 하루재, 우이동",
     "path_color": "blue_true",
     "distance": "3.65km",
@@ -73,7 +85,7 @@
   },
   {
     "start_date": "1999-07-31T09:09:09.000Z",
-    "trip_days": 2,
+    "trip_days": 1,
     "path": "북한산성 탐방지원센터-위문-백운대-위문-대서문-북한산유원지",
     "path_color": "red",
     "distance": "약 6km",
