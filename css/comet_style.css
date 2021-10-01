@@ -1,0 +1,39 @@
+// mt_trip_*
+//		산 하나에 대한 등산 이력을 표현하기 위한 클래스 정의들
+
+.mt_trip_table {
+	 display: table;
+	 width: 100%;
+	 border-collapse: collapse;
+}
+
+.mt_trip_row {
+	 display: table-row;
+	 width: 100%;
+	 border-collapse: collapse;
+  }
+
+.mt_trip_col1 {
+	 display: table-cell;
+	 width: 90px;
+	 border: 1px solid #bcbcbc;
+	 text-align: center;
+	 padding: 2px 2px 2px 2px;
+  }
+
+.mt_trip_col2 {
+	display: table-cell;
+	border: 1px solid #bcbcbc;
+	padding: 2px 4px 2px 4px;
+}  
+
+// 맨 아래에 총 건수를 적어 주기 위한 클래스 정의
+.mt_trip_col1_count {
+	display: table-cell;
+}  
+
+.mt_trip_col2_count {
+	display: table-cell;
+	padding: 2px 10px 2px 4px;
+	text-align: right;
+}  
