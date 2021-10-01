@@ -24,10 +24,22 @@
 		"rambler_url": "https://www.ramblr.com/web/mymap/trip/641990/3329549/"
 	},
 	{
+		"start_date": "2021-07-26T09:09:09.000Z",
+		"trip_days": 1,
+		"path": "석수역, 호암산 숲길공원, 서울둘레길, 금산초등학교",
+		"path_color": "red",
+		"distance": "2.3km",
+		"max_height": "144m",
+		"height_earned": "71m",
+		"trip_time": "1시간 15분",
+		"google_photo_url": "",
+		"rambler_url": "https://www.ramblr.com/web/mymap/trip/641990/3221578/"
+	},
+	{
 		"start_date": "2021-07-13T09:09:09.000Z",
 		"trip_days": 1,
 		"path": "서울둘레길, 관악문, 돌산국기봉, 보덕사, 고시공원",
-		"path_color": "blue",
+		"path_color": "red",
 		"distance": "4.6km",
 		"max_height": "259m",
 		"height_earned": "283m",
