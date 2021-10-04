@@ -69,7 +69,7 @@
 				sDistance = obj[i].distance; 
 			}
 			line2_1 = '<img src="../images/images_deco/' + obj[i].path_color + '.gif" width=30 height=5> '
-			  + sDistance + ' ' + obj[i].trip_time;
+			  + sDistance + ', ' + obj[i].trip_time;
 
 			// 두번째 컬럼: 획득고도
 			if(obj[i].height_earned) {
@@ -77,6 +77,9 @@
 			}
 			else if(obj[i].max_height) {
 				line2_2 = ', 최고점: ' + obj[i].max_height;
+			}
+			else {
+				line2_2 = "";
 			}
 			
 			tdCol2.innerHTML = obj[i].path + '<br>' + line2_1 + line2_2;
