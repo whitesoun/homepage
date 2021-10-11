@@ -3,28 +3,27 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Our superheroes</title>
+    <title>JSON 테스트</title>
 
     <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
  	<style>
 		.width100 {width:100%;}
 		.pic1 {width: 80px;    height:     80px; object-fit: cover; 
 			   display: block; margin-left: auto; margin-right: auto; }
-		table {width:100%;  margin: 5px 0px 0px 0px; border: 1px solid #bcbcbc;}
-      	.path_td   {border: 1px solid #bcbcbc;}
-      	.column4_th{ height:82px; border: 1px solid #bcbcbc;}
-      	.column4_td{ text-align:center; font-size: small; border: 1px solid #bcbcbc;}
-      	
+		table {width:100%;}
+		
+      	table, th, td {margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; border: 1px solid #bcbcbc;}      	
 	</style>
  
   </head>
 
   <body>
 
-      <header>
+	<header>
+    </header>
 
-      </header>
+	<table id="trips_table">
+	</table>
 
       <section>
 
@@ -34,18 +33,58 @@
     const header = document.querySelector('header');
     const section = document.querySelector('section');
 
-    let requestURL = 'file:///D:/A_JAVA/eclipse-workspace/ProjectSoun/WebContent/json/json_mt_seoark_trip.json';
+    let requestURL = 'https://whitesoun.github.io/homepage/json/mt1708_seorak.json';
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
     request.send();
 
     request.onload = function() {
-      const superHeroes = request.response;
-      populateHeader(superHeroes);
+      const jsonTrips = request.response;
+      ShowTirps(jsonTrips);
 //      showHeroes(superHeroes);
+//     <link rel="stylesheet" href="style.css">
+
     }
 
+    // 2021-09-29, 등산기록 json 파일을 읽어 표 형태로 보여준다.
+    function ShowTirps(obj) {
+        const myH1 = document.createElement('h1');
+        myH1.textContent = "등산 일지"; // obj['squadName'];
+        header.appendChild(myH1);
+
+//        const myPara = document.createElement('p');
+//        myPara.textContent = 'Hometown: ' + obj['homeTown'] + ' // Formed: ' + obj['formed'];
+//        header.appendChild(myPara);
+        
+        // 표 만들기 테스트
+        const table = document.getElementById('trips_table');
+        var   tbody = document.createElement("tboyd");
+        
+        for(let i = 0; i < obj.length; i++) {
+			var tr = document.createElement("tr");
+			var tdCol1 = document.createElement("td");
+			var tdCol2 = document.createElement("td");
+
+//			tdCol1.className = "path_td";
+			const start_date = new Date(obj[i].start_date);
+			const year = start_date.getFullYear(); 
+			const month = start_date.getMonth();
+			const date = start_date.getDate();
+
+
+			tdCol1.appendChild(document.createTextNode(year+"년"+month+"월"   ));
+			tr.   appendChild(tdCol1);
+
+			tdCol2.   appendChild(document.createTextNode(obj[i].path));
+			tr.   appendChild(tdCol2);
+			tbody.appendChild(tr);
+		}
+		//        }
+        table.appendChild(tbody);
+//        header.appendChild(table);
+    }
+    
     function showHeroes(obj) {
       const heroes = obj['members'];
 
@@ -79,38 +118,6 @@
       }
     }
     
-    function populateHeader(obj) {
-        const myH1 = document.createElement('h1');
-        myH1.textContent = "등산 일지"; // obj['squadName'];
-        header.appendChild(myH1);
-
-//        const myPara = document.createElement('p');
-//        myPara.textContent = 'Hometown: ' + obj['homeTown'] + ' // Formed: ' + obj['formed'];
-//        header.appendChild(myPara);
-        
-        // 표 만들기 테스트
-        const table = document.createElement('table');
-
-        var thead = document.createElement("thead");
-        var tr = document.createElement("tr");
-        
-        for(j in obj )
-        {
-         var td = document.createElement("th");
-//         td.id = "head" + "_" + 1;
-//         td.className = "head " + obj['squadName'];
-//         td.name = j.start_date;
-         td.appendChild(document.createTextNode(j.start_date));
-
-         tr.appendChild(td);
-        }
-        thead.appendChild(tr);
-        table.appendChild(thead);
-        
-        header.appendChild(table);
-   
-    
-    }
     
  // JSON형태의 데이터를 테이블로 만든다
     function JSON2Table(table, name, data)
