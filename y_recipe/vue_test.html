@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+    </head>
+
+    <body>
+        <script src="https://unpkg.com/vue@2.3:7575"></script>
+		<template>  
+		  <v-container>
+		    <v-data-table
+		            style="width: 50%"
+		            :headers="headers"
+		            :items="contents"
+		            sort-by="food"
+		    ></v-data-table>
+		  </v-container>
+		</template>
+		
+		<script>
+		  export default {
+		    name: 'App',
+		    data: () => ({
+		      headers: [
+		        { text: 'ID', value: 'id' },
+		        { text: 'Name', value: 'name' },
+		        { text: 'Food', value: 'food' },
+		      ],
+		      contents: [
+		        { id: 1, name: 'ABC', food: 'pizza' },
+		        { id: 2, name: 'DEF', food: 'chicken' },
+		        { id: 3, name: 'GHI', food: 'hamburger' },
+		      ]
+		    })
+		  };
+		</script>
+    </body>
+</html>

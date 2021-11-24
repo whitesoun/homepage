@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+    </head>
+
+    <body>
+        <div id="app">
+        	<button @click="changeSet">변경</button>
+        	<div v-for="item in items" :key="item.key" @click="paint">
+        		key: {{ item.key }} / ID: {{ item.id }}
+        	</div>
+        </div>
+        
+        <script src="https://unpkg.com/vue@2.3"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                mounted: function () {
+                	this.changeSet();
+                },
+                data: {
+                    presetNumber: 0,
+                    items: [],
+                    preset: [
+                    	[
+                    		{id: 1, key:1},
+                    		{id: 2, key:1},
+                    		{id: 3, key:2},
+                    		{id: 4, key:3},
+                    		{id: 5, key:5},
+                    		{id: 6, key:8}
+                    	],
+                    	[
+                    		{id: 7, key:1},
+                    		{id: 8, key:2},
+                    		{id: 9, key:3},
+                    		{id: 10, key:4},
+                    		{id: 11, key:5},
+                    		{id: 12, key:6},
+                    		{id: 13, key:7},
+                    		{id: 14, key:8}
+                    	]
+                    ]
+                },
+                methods: {
+                	changeSet: function() {
+                		this.presetNumber = 1-this.presetNumber;
+                		this.items = JSON.parse(JSON.stringify(this.preset[this.presetNumber]));	// Deep Copy
+                	},
+                	paint: function() {
+                		if (event.target.style.background)
+                			event.target.style.background = null;
+                		else
+                			event.target.style.background = 'yellow';
+                	}
+                }
+            })
+        </script>
+    </body>
+</html>
